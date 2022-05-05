@@ -10,12 +10,12 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:embedded-json.releaseEmbeddedJSON"
+        "onCommand:embedded-json.unwrapEmbeddedJSON"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [{
-            "command": "embedded-json.releaseEmbeddedJSON",
+            "command": "embedded-json.unwrapEmbeddedJSON",
             "title": "Release Embedded JSON"
 
 		}]

@@ -5,7 +5,7 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	let disposable = vscode.commands.registerCommand('embedded-json.releaseEmbeddedJSON', function () {
+	let disposable = vscode.commands.registerCommand('embedded-json.unwrapEmbeddedJSON', function () {
 
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) {
