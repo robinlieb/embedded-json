@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:embedded-json.helloWorld"
+        "onCommand:embedded-json.releaseEmbeddedJSON"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [{
-            "command": "embedded-json.helloWorld",
-            "title": "Hello World"
+            "command": "embedded-json.releaseEmbeddedJSON",
+            "title": "Release Embedded JSON"
 
 		}]
 	},
