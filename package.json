@@ -1,7 +1,7 @@
 {
 	"name": "embedded-json",
 	"displayName": "Embedded JSON",
-	"publisher": "Robin Lieb",
+	"publisher": "robinlieb",
 	"description": "",
 	"version": "1.0.0",
 	"engines": {
