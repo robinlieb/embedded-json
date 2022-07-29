@@ -1,0 +1,6 @@
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 21,
+    "address": "{\"city\": \"San Diego\", \"zip\": 92101}"
+}

@@ -1,5 +1,6 @@
 
 const vscode = require('vscode');
+const replaceEmbeddedJson = require('./replacer');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -20,9 +21,7 @@ function activate(context) {
 			document.positionAt(text.length)
 		)
 
-		var alteredText = text.replaceAll('\"{', '{');
-		alteredText = alteredText.replaceAll('}\"', '}');
-		alteredText = alteredText.replaceAll('\\"', '"');
+		var alteredText = replaceEmbeddedJson(text)
 
 		editor.edit(
 			(editBuilder) => {
