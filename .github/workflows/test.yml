@@ -1,0 +1,31 @@
+name: Run tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      - 'releases/*'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: npm install
+        run: npm install
+      - name: lint
+        run: npm run pretest
+
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+    - name: npm install
+      run: npm ci
+    - name: unit test
+      run: npm run test:unit
